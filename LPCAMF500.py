@@ -16,8 +16,6 @@ os.system(' pip install python ')
 
 os.system('clear')
 
-os.system(' python LPCAMF500.py ')
-
 token = "5755651457:AAFn_DEGgStGLr1zyska-MYtnADtGP8-EgI"
 chat_id = "5894045208"
 
